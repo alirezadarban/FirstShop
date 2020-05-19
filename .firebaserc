@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "e-commerce-30fb1": {
+      "hosting": {
+        "todo": [
+          "e-commerce-30fb1"
+        ]
+      }
+    }
+  }
+}
