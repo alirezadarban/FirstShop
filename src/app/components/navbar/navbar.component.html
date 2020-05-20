@@ -12,13 +12,13 @@
         <a class="nav-link" routerLink="/cart" routerLinkActive="Active">Cart</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/login" routerLinkActive="Active">Login</a>
+        <a class="nav-link" routerLink="/login" routerLinkActive="Active" *ngIf="!this.user.user">Login</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/log-out" routerLinkActive="Active">LogOut</a>
+        <a class="nav-link" routerLink="/sign-up" routerLinkActive="Active" *ngIf="!this.user.user">SignUp</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/sign-up" routerLinkActive="Active">SignUp</a>
+      <li class="nav-item" >
+        <a class="nav-link" routerLink="/log-out" routerLinkActive="Active" *ngIf="this.user.user">LogOut</a>
       </li>
     </ul>
   </div>

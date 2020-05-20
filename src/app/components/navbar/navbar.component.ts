@@ -8,7 +8,7 @@ import {AuthService} from '../../services/auth.service';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private user: AuthService) { }
+  constructor(public user: AuthService) { }
 
   isOpen : boolean = false;
 
@@ -18,6 +18,7 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    console.log("this.user.user",typeof this.user.user)
   }
 
 }

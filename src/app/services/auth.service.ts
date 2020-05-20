@@ -35,6 +35,7 @@ export class AuthService {
 
   async logout() {
     this.user = null;
+    console.log("this.user",this.user)
     await this.afAuth.signOut();
     this.router.navigate(['']);
   }

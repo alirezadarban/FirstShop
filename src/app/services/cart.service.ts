@@ -14,20 +14,18 @@ export class CartService {
     let flag = false;
     for (let i = 0; i < this.items.length; i++) {
       if (product.Name === this.items[i].Name) {
-        this.items[i].Count++;
         flag = true;
         break;
       }
     }
     if (!flag) {
-      product.Count = 1;
       this.items.push(product);
     }
   }
 
   getItems() {
     for (let i = 0; i < this.items.length; i++) {
-      this.fee += this.items[i].Price * this.items[i].Count;
+      this.fee += this.items[i].Price * this.items[i].count;
     }
     return [this.items, this.fee];
   }

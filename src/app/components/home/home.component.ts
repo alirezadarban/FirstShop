@@ -17,7 +17,9 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.ps.getAllProducts().subscribe(data => this.Products = data);
   }
+
   addToCart(index) {
+    this.Products[index].count++;
     this.cart.addToCart(this.Products[index]);
   }
 

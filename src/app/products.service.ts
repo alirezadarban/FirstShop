@@ -5,10 +5,10 @@ import {AngularFirestore} from '@angular/fire/firestore';
   providedIn: 'root'
 })
 export class ProductsService {
+  constructor(private fs: AngularFirestore) {
+  }
 
-  constructor(private fs: AngularFirestore) { }
-
-  getAllProducts(){
+  getAllProducts() {
     return this.fs.collection('Products').valueChanges();
   }
 }
