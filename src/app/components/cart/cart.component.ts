@@ -10,7 +10,7 @@ import {AuthService} from '../../services/auth.service';
 export class CartComponent implements OnInit {
   items;
   fee;
-  message = "You're items are ready to ship";
+  message = "Thank You! You're items are ready to ship!";
   constructor(private cart: CartService, private user: AuthService) {
   }
 

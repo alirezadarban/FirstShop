@@ -24,7 +24,7 @@ export class AuthService {
 
   async signup(email: string, password: string) {
     await this.afAuth.createUserWithEmailAndPassword(email, password);
-    this.router.navigate(['login']);
+    this.router.navigate(['']);
   }
 
 
