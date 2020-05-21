@@ -1,12 +1,13 @@
 .flex-container {
   display: flex;
-  /*justify-content: space-around;*/
-  flex-flow: wrap;
+  justify-content: space-around;
+  /*flex-flow: wrap;*/
 
 }
 
 .flex-container > div {
-  width: 300px;
+  width: 100%;
+  /*width: 300px;*/
   margin: 10px;
   text-align: center;
   line-height: 75px;
